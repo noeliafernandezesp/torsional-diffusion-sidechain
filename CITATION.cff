@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "ChiGNN: Torsional Diffusion for Protein Side-Chain Recovery"
+abstract: "Generative AI model for protein side-chain conformation recovery
+  via torsional diffusion over the circular space S¹ using Von Mises noise.
+  GCNConv architecture, 80K parameters. MSc Bioinformatics & Biostatistics, UOC 2026."
+authors:
+  - family-names: "Fernández Espiñeira"
+    given-names: "Noelia"
+repository-code: "https://github.com/noeliafernandezesp/torsional-diffusion-sidechain"
+license: MIT
+year: 2026
