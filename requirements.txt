@@ -1,0 +1,8 @@
+biopython
+py3Dmol
+rdkit
+torch-geometric
+numpy
+pandas
+matplotlib
+scipy
