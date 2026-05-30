@@ -5,7 +5,9 @@
 > Área: Diseño de Fármacos y Biología Estructural · Junio 2026
  
 🌐 [English version](README_EN.md)
- 
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/noeliafernandezesp/torsional-diffusion-sidechain/blob/main/TFM_script.ipynb)
+
 ---
  
 ## Resumen
@@ -225,6 +227,7 @@ El dataset fue construido a partir de **PDB-REDO**, una base de datos de estruct
 | Partición train / val / test | 80% / 10% / 10% (a nivel de proteína) |
 | Distribución χ₁ | Trimodal confirmada (g⁻, t, g⁺) |
 | Formato | `.csv` (legible) + `.pt` (PyTorch Geometric) |
+| Fecha de descarga | 2 de abril de 2026 |
  
 La descarga y procesamiento de los archivos PDB se realiza automáticamente desde el notebook (Bloques 5–9). Los archivos procesados se almacenan en Google Drive bajo `MyDrive/TFM_SideChain/`.
  
