@@ -5,10 +5,10 @@
 > Area: Drug Design and Structural Biology · June 2026
  
 🌐 [Versión en español](README.md)
-
+ 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/noeliafernandezesp/torsional-diffusion-sidechain/blob/main/TFM_script.ipynb)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20514250.svg)](https://doi.org/10.5281/zenodo.20514250)
-
+ 
 ---
  
 ## Abstract
@@ -113,16 +113,20 @@ The notebook includes a **pipeline control panel** with boolean flags to determi
 ```
 torsional-diffusion-sidechain/
 │
-├── TFM_script.ipynb              # Main notebook (Phases 1, 2 and 3)
-├── TFM_script.py                 # Python version of the script
-├── requirements.txt              # Project dependencies
-├── README.md                     # Spanish version
-├── README_EN.md                  # This file
-├── LICENSE                       # MIT licence
-└── TFM_Noelia_Fernandez.pdf      # Full thesis document
+├── TFM_script.ipynb                          # Main notebook (Phases 1, 2 and 3)
+├── TFM_script.py                             # Python version of the script
+├── Demo_TFM.ipynb                            # Interactive demonstration notebook
+├── Demo_TFM.py                               # Python version of the demo
+├── requirements.txt                          # Project dependencies
+├── README.md                                 # Spanish version
+├── README_EN.md                              # This file
+├── LICENSE                                   # MIT licence
+├── TFM_Noelia_Fernandez.pdf                  # Full thesis document
+├── TFM_Presentacion_Diapositivas_ChiGNN.pdf  # Slide presentation (PDF)
+└── TFM_vídeo_Presentacion_ChiGNN_comprimido  # Presentation video
 ```
  
-> Data files (`.pt`, `.csv`) and the model checkpoint are stored on Google Drive due to their size. See the [Dataset](#dataset) section for download instructions.
+> Data files (`.pt`, `.csv`) and the model checkpoint are stored on Google Drive and on Zenodo due to their size. See the [Dataset](#dataset) section for download instructions.
  
 ---
  
@@ -172,7 +176,15 @@ pip install torch-geometric
 3. Mount your Google Drive when prompted
 4. **First run:** in Block 0, set `FORCE_ALL = True` and run all cells
 5. **Subsequent runs:** keep all flags as `False` to load from Drive (~30 sec)
-### Option B — Inference on a new structure
+### Option B — Interactive demo
+ 
+For a quick exploration of the model without re-training or downloading the full dataset, use the demonstration notebook:
+ 
+[![Open Demo in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/noeliafernandezesp/torsional-diffusion-sidechain/blob/main/Demo_TFM.ipynb)
+ 
+The `Demo_TFM.ipynb` notebook loads the trained checkpoint directly from Zenodo and allows you to visualise side-chain conformation predictions on example structures.
+ 
+### Option C — Inference on a new structure
  
 ```python
 from Bio.PDB import PDBParser
